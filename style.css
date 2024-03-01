@@ -82,8 +82,10 @@ body {
   color: var(--clr-black);
   position: relative;
   background-color: var(--clr-white);
+  overflow-y: scroll;
   scroll-snap-type: y proximity;
   scroll-snap-align: start;
+  scroll-padding-top: 4rem;
 }
 
 /* body:has(header.folded) {
@@ -274,6 +276,7 @@ header.folded .button span {
 
 section {
   margin: 0 auto;
+  scroll-padding-top: 4rem;
 }
 
 .boxed {
@@ -332,4 +335,22 @@ section.hero h2 {
 
 .btn:hover {
   opacity: .9;
+}
+
+@media screen and (max-width: 730px) {
+  section.hero {
+    text-align: left;
+    
+  }
+
+  section.hero h2 {
+    font-size: 2.65rem;
+    line-height: 3rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .button-row {
+    justify-content: flex-start;
+  }
 }
