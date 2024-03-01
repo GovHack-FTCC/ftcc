@@ -148,7 +148,7 @@ header.folded .logo-main {
   height: 4rem;
 }
 
-.button {
+.button, .button:active {
   color: var(--clr-primary-light);
   transition: 300ms;
   opacity: .9;
@@ -160,7 +160,7 @@ header.folded .logo-main {
   /* animation: growup 10s ease infinite; */
 }
 
-header.folded .button {
+header.folded .button, header.folded .button:active {
   opacity: 1;
   position: absolute;
   bottom: 0;
