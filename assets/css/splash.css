@@ -1,0 +1,60 @@
+/* hero block */
+
+#hero {
+  /* position: relative; */
+}
+
+.logo-container {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+#logo-01 {
+  rotate: 50deg;
+  animation: logo-rotate 20s linear infinite;
+  transform: scale(.8);
+  opacity: .95;
+}
+
+@keyframes logo-rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.callout {
+  /* display: none; */
+  position: absolute;
+  color: var(--clr-white);
+  background-color: hsla(150, 65.2%, 25.9%, 0.38);
+  border: 1px solid var(--clr-success);
+  padding: .85rem 1.15rem;
+  font-size: .85rem;
+  line-height: 1.15rem;
+  border-radius: .35rem;
+  width: 200px;
+  box-shadow: 0 10px 30px hsla(180, 65%, 80%, .15);
+}
+
+.callout.callout-1 {
+  top: 50%;
+  right: 58%;
+}
+
+.callout.callout-2 {
+  top: 35%;
+  left: 58%;
+  background-color: hsla(306, 55%, 39%, 0.38);
+  border: 1px solid hsla(306, 55%, 39%, 1);
+}
+
+.callout.callout-3 {
+  top: 63%;
+  left: 40%;
+  background-color: hsla(40, 70%, 41%, 0.38);
+  border: 1px solid hsla(40, 70%, 41%, 1);
+}
