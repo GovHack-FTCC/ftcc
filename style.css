@@ -223,27 +223,27 @@ header.folded .button span {
     padding-bottom: 1rem;
     color: var(--clr-secondary-light);
   }
-  80% {
+  10% {
     padding-bottom: 1rem;
     color: var(--clr-secondary-light);
   }
-  85% {
+  15% {
     padding-bottom: .9rem;
     color: var(--clr-secondary-light);
   }
-  88% {
+  18% {
     padding-bottom: 1.25rem;
     color: var(--clr-secondary-lighter);
   }
-  90% {
+  20% {
     padding-bottom: 1rem;
     color: var(--clr-secondary-light);
   }
-  95% {
+  25% {
     padding-bottom: 1.5rem;
     color: var(--clr-secondary-lighter);
   }
-  100% {
+  30% {
     padding-bottom: 1rem;
     color: var(--clr-secondary-light);
   }
