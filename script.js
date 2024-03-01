@@ -16,4 +16,5 @@ window.addEventListener('scroll', (e) => {
 downButton.addEventListener('click', (e) => {
   console.log('hey')
   header.classList.toggle('folded');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 })
