@@ -79,9 +79,9 @@ body {
   overflow: hidden;
 }
 
-/* body:has(header.folded) {
+body:has(header.folded) {
   overflow: auto;
-} */
+}
 
 body.splash {
   display: flex;
@@ -157,7 +157,7 @@ header.folded .logo-main {
   color: var(--clr-secondary-light);
   bottom: 0;
   position: absolute;
-  animation: growup 10s ease infinite;
+  /* animation: growup 10s ease infinite; */
 }
 
 header.folded .button {
@@ -168,7 +168,7 @@ header.folded .button {
   transform: translate(0,100%);
   padding: .8rem .35rem .5rem;
   color: var(--clr-secondary-lighter);
-  animation: none;
+  /* animation: none; */
 }
 
 header.folded .button:hover {
