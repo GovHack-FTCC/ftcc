@@ -35,6 +35,8 @@
 
   /* neutral colors */
   --clr-white: hsl(60, 33%, 98%);
+  --clr-white-80: hsla(60, 33%, 98%, .8);
+  --clr-white-60: hsla(60, 33%, 98%, .6);
   --clr-light-gray: hsl(0, 0%, 75%);
   --clr-lighter-gray: hsl(0, 0%, 90%);
   --clr-gray: hsl(240, 3%, 47%);
@@ -123,8 +125,6 @@ header {
   gap: 1rem;
   width: 100%;
   height: 100dvh;
-  background: rgb(18,51,84);
-  background: radial-gradient(circle, rgba(18,51,84,1) 1%, rgba(19,22,31,1) 100%); 
   font-family: var(--fnt-body);
   position: relative;
   transition: 300ms;
@@ -275,6 +275,8 @@ header.folded .button span {
 section {
   margin: 0 auto;
   scroll-padding-top: 4rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .boxed {
@@ -323,13 +325,12 @@ section:last-of-type {
 /* hero section */
 section.hero {
   text-align: center;
-  padding-top: 2rem;
   height: 90dvh;
-  min-height: 9dvh;
+  min-height: 90dvh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--clr-primary-lightest);
+  /* background-color: var(--clr-primary-lightest); */
   background-size: cover;
   background-blend-mode: normal;
 }
@@ -366,7 +367,7 @@ section.hero h2 {
   cursor: pointer;
   border: 1px solid var(--clr-success);
   border-radius: 6px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -378,8 +379,8 @@ section.hero h2 {
 }
 
 .btn.btn-secondary {
-  background-color: var(--clr-secondary-lightest);
-  border: 1px solid var(--clr-secondary-darker);
+  background-color: var(--clr-white-60);
+  border: 1px solid var(--clr-primary-darker);
   color: var(--clr-secondary-darker);
 }
 
@@ -391,10 +392,18 @@ section.hero h2 {
   section.hero {
     text-align: left;
     height: initial;
-    padding-top: 10rem;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
+    height: 90dvh;
+    min-height: 90dvh;
+  }
+  section.hero .row {
+    padding-top: 6rem;
+  }
+
+  .section-title {
+    padding-top: 8rem;
   }
 
   section.hero h2 {

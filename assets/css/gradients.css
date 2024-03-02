@@ -1,0 +1,64 @@
+.blub-01 {
+  height: 500px;
+  width: 300px;
+  position: absolute;
+  background-image: linear-gradient(50deg, rgb(8, 38, 200) 20%, rgb(123, 0, 92) 50% ,rgb(159, 45, 0) 80%);
+  border-radius: 100%;
+  filter: blur(200px);
+  z-index: -10;
+  transform: rotate(30deg);
+  opacity: .7;
+}
+
+.blub-02 {
+  height: 800px;
+  width: 150px;
+  position: absolute;
+  background-image: linear-gradient(50deg, rgb(8, 38, 200) 20%, rgb(123, 0, 92) 50% ,rgb(159, 45, 0) 80%);
+  border-radius: 100%;
+  filter: blur(200px);
+  z-index: -10;
+  transform: rotate(60deg);
+  opacity: .6;
+  top: 50%;
+  left: 10%;
+}
+
+.blub-03 {
+  height: 800px;
+  width: 100px;
+  position: absolute;
+  background-image: linear-gradient(50deg, rgb(8, 38, 200) 20%, rgb(123, 0, 92) 50% ,rgb(159, 45, 0) 80%);
+  border-radius: 100%;
+  filter: blur(100px);
+  z-index: -10;
+  transform: rotate(60deg);
+  opacity: .8;
+  top: -29%;
+  right: 10%;
+}
+
+
+/* linear backgrounds */
+
+.bg-full-01 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -20;
+  background-color: var(--clr-primary-darker);
+  background-image: linear-gradient(0deg,#131c4d 0%,#0a0817 70%);
+}
+
+.bg-full-02 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -20;
+  background-color: var(--clr-primary-lightest);
+  /* background-image: linear-gradient(0deg,#dfe2f0 0%,#e5e3f6 70%); */
+}
+
+.folded .blub-01, .folded .bg-full-01 {
+  display: none;
+}
