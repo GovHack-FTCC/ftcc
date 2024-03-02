@@ -125,3 +125,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# rsync -avz --exclude 'node_modules' --exclude '.git' --exclude '.env' \
+# -e "ssh -i ~/_ssh/ftcc-ec2-key-01.pem" \
+# . ubuntu@ec2-13-211-222-27.ap-southeast-2.compute.amazonaws.com:~/site
