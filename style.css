@@ -152,6 +152,7 @@ header.folded {
 
 .logo-main img {
   animation: rotate 15s linear infinite;
+  opacity: .8;
 }
 
 header.folded .logo-main {
@@ -411,6 +412,18 @@ section#footer h4 {
 .footer-menu .footer-about img {
   width: 200px;
   opacity: .8;
+  margin: 0 auto 3rem;
+
+}
+
+@media screen and (max-width: 730px) {
+  .footer-menu.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-about {
+    text-align: left;
+  }
 }
 
 /* menu */
