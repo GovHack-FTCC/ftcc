@@ -1,0 +1,8 @@
+/* ftcc logo symbol */
+#ftcc-logo-symbol {
+  fill: var(--clr-primary-lightest);
+}
+
+header.folded #ftcc-logo-symbol {
+  fill: var(--clr-primary-dark);
+} 

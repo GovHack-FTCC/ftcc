@@ -1,5 +1,6 @@
 const downButton = document.querySelector('header .button');
 const header = document.querySelector('header');
+const headerBtn = document.querySelector('header');
 
 window.addEventListener('scroll', (e) => {
   const scrollHeight = window.scrollY;
