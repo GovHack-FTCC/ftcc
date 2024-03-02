@@ -10,6 +10,9 @@ window.addEventListener('scroll', (e) => {
 });
 
 downButton.addEventListener('click', (e) => {
-  header.classList.toggle('folded');
+  console.log('scroll button clicked')
+  if (!document.querySelector('header.folded')) {
+    header.classList.add('folded');
+  } else header.classList.remove('folded');
   window.scrollTo({ top: 0, behavior: 'smooth' });
 })
