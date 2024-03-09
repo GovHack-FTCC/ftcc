@@ -391,6 +391,30 @@ nav .logo-container {
   padding-right: 3rem;
 }
 
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  padding-right: 2rem;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.menu-toggle:hover {
+  color: var(--clr-primary-light);
+}
+
+.menu-toggle .close {
+  display: none;
+}
+
 nav a li {
   list-style: none;
 }
@@ -407,6 +431,66 @@ nav a:hover {
 
 @media screen and (max-width: 730px) {
 
+  nav a:hover {
+    border: none;
+    color: var(--clr-white);
+  }
+
+  nav .logo-container {
+    padding-left: 1rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu-container ul {
+    display: none;
+  }
+
+  #masthead {
+    overflow: initial;
+  }
+
+  .menu-active ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background-color: var(--clr-primary-dark);
+    width: 200px;
+    height: 100vh;
+    color: var(--clr-primary-lighter);
+    padding-right: 0;
+  }
+
+  .menu-active .close {
+    display: flex;
+    position: absolute;
+    z-index: 120;
+    color: var(--clr-primary-light);
+    top: 2rem;
+    transition: 300ms;
+  }
+
+  .menu-active .close:hover {
+    color: var(--clr-primary-lightest);
+  }
+
+  .menu-active a {
+    color: var(--clr-primary-lighter);
+    font-size: 1rem;
+  }
+
+  .menu-active .top-menu > * {
+    padding: .5rem 3rem;
+    width: 100%;
+  }
 }
 
 /* hero section */
