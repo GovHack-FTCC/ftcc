@@ -439,10 +439,10 @@ nav a:hover {
     padding-left: 1rem;
   }
 
-  nav img {
-    height: fit-content;
+  nav svg {
+    height: 3rem;
     width: 170px;
-    
+
   }
 
   .menu-toggle {
