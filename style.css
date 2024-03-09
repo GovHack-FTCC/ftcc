@@ -341,7 +341,7 @@ section:last-of-type {
 .section-title h3 {
   color: var(--clr-black);
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 2px;
 }
 
@@ -405,6 +405,11 @@ section.hero h2 {
   transform: rotate(130deg);
 }
 
+@media screen and (max-width: 730px) {
+  .bg-items img {
+    width: 200px;
+  }
+}
 
 /* cards */
 
@@ -448,6 +453,7 @@ section.hero h2 {
 @media screen and (max-width: 730px) {
   .cards {
     gap: 1rem;
+    font-size: 1rem;
   }
 }
 
@@ -679,6 +685,10 @@ section#news {
     gap: 2rem;
     padding: 1rem 0;
   }
+
+  .cards.news-list .card-item img {
+    height: 14rem;
+  }
 }
 
 /* footer quote */
@@ -763,7 +773,7 @@ footer h4 {
   font-size: 2rem;
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .copyright-block .socials > * {
