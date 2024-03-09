@@ -838,3 +838,42 @@ footer h4 {
 .menu.menu-horizontal {
   flex-direction: row;
 }
+
+/* back to top */
+
+.back-to-top {
+  position: fixed;
+  bottom: -10rem;
+  right: 2rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  color: var(--clr-primary-light);
+  background-color: var(--clr-primary-dark);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10rem;
+  padding-bottom: 5px;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.back-to-top:hover {
+  background-color: var(--clr-primary);
+}
+
+.back-to-top a {
+  color: var(--clr-primary-lighter);
+}
+
+.back-to-top:hover a{
+  color: var(--clr-white);
+}
+
+
+.scrolling .back-to-top {
+  bottom: 2rem;
+  transition: 300ms;
+}

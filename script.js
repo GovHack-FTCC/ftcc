@@ -1,11 +1,17 @@
 const downButton = document.querySelector('header .button');
 const header = document.querySelector('header');
 const headerBtn = document.querySelector('header');
+const backToTop = document.querySelector('.back-to-top');
 
 window.addEventListener('scroll', (e) => {
   const scrollHeight = window.scrollY;
-  if (scrollHeight > 0) {
+  if (scrollHeight > 150) {
     header.classList.add('folded');
+  }
+  if (scrollHeight > 600) {
+    document.body.classList.add('scrolling');
+  } else {
+    document.body.classList.remove('scrolling');
   }
 });
 
