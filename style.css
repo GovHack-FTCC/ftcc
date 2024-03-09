@@ -334,7 +334,7 @@ section:last-of-type {
 /* section title */
 
 .section-title h2 {
-  font-size: 3rem;
+  font-size: 2.65rem;
   margin-bottom: 2rem;
 }
 
@@ -438,9 +438,6 @@ section.hero h2 {
   background-color: hsla(225,50%,90%, .35); 
 }
 
-.card-item:hover {
-  opacity: .8;
-}
 
 .card-item i {
   color: var(--clr-primary);
@@ -658,7 +655,8 @@ section#news {
 
 .cards.news-list .card-item .btn {
   margin-top: .5rem;
-  width: fit-content;
+  max-width: fit-content;
+  width: 200px;
   font-size: .75rem !important;
   padding: 0;
   padding-left: 1rem;
@@ -666,6 +664,15 @@ section#news {
   gap: 1rem;
   justify-content: space-between;
   align-items: center;
+  transition: 500ms;
+  color: var(--clr-primary-lighter);
+}
+
+.cards.news-list .card-item .btn:hover {
+  width: 100%;
+  max-width: 100%;
+  transition: 300ms;
+  color: var(--clr-primary-lightest);
 }
 
 .cards.news-list .card-item .btn i {
