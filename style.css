@@ -430,7 +430,6 @@ nav a:hover {
 }
 
 @media screen and (max-width: 730px) {
-
   nav a:hover {
     border: none;
     color: var(--clr-white);
@@ -444,7 +443,9 @@ nav a:hover {
     display: flex;
   }
 
-  .menu-container ul {
+  ul.top-menu {
+    width: 0;
+    transition: 300ms;
     display: none;
   }
 
@@ -452,13 +453,13 @@ nav a:hover {
     overflow: initial;
   }
 
-  .menu-active ul {
+  .menu-active ul.top-menu {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     padding-top: 5rem;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     z-index: 100;
@@ -471,7 +472,7 @@ nav a:hover {
 
   .menu-active .close {
     display: flex;
-    position: absolute;
+    position: fixed;
     z-index: 120;
     color: var(--clr-primary-light);
     top: 2rem;
@@ -650,6 +651,10 @@ section.hero h2 {
 @media screen and (max-width: 730px) {
   .subsection-title h3 {
     color: var(--clr-primary-darker);
+  }
+
+  .subsection-title {
+    width: 100%;
   }
 }
 
