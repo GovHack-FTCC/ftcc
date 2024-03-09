@@ -21,7 +21,7 @@
   --clr-primary: hsl(var(--clr-primary-hue), 65%, 50%);
   --clr-primary-light: hsl(220, 35%, 52%);
   --clr-primary-lighter: hsl(220, 46%, 80%);
-  --clr-primary-lightest: hsl(218, 29%, 95%);
+  --clr-primary-lightest: hsl(var(--clr-primary-hue), 45%, 96%);
   --clr-primary-dark: hsl(220, 59%, 15%);
   --clr-primary-darker: hsl(216, 44%, 13%);
   --clr-primary-darkest: hsl(225, 9%, 9%);
@@ -285,7 +285,7 @@ section {
   margin: 0 auto;
   scroll-padding-top: 4rem;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .boxed {
@@ -370,20 +370,24 @@ section.hero h2 {
 
 /* background items */
 
+.bg-items .blur {
+  filter: blur(30px);
+  opacity: .75;
+}
+
 .bg-items img {
   position: absolute;
-  top: -10%;
-  right: -20%;
+  top: 0%;
+  right: 0%;
   z-index: -10;
   width: 400px;
   transform: translateX(20%);
 }
 
 .bg-items img.blob-02 {
-  bottom: -5%;
-  top: initial;
+  top: 50%;
   right: initial;
-  left: -20%;
+  left: -10%;
   transform: rotate(130deg);
 }
 
@@ -408,7 +412,7 @@ section.hero h2 {
   background-color: var(--clr-primary-lightest);
   border-radius: 10px;
   position: relative;
-  opacity: 1;
+  opacity: .85;
   transition: 300ms;
 }
 
@@ -418,6 +422,56 @@ section.hero h2 {
 
 .card-item i {
   color: var(--clr-primary);
+}
+
+.card-item p {
+  line-height: 1.35rem;
+}
+
+/* subsection */
+
+.subsection-title {
+  text-align: center;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.subsection-title h3 {
+  text-transform: uppercase;
+  background-color: var(--clr-white);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  font-size: .85rem;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.subsection-title h3::after {
+  content: "";
+  width: 100%;
+  border-top: 1px solid var(--clr-primary-light);
+  display: block;
+  left: 0;
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  z-index: -10;
+  opacity: .35;
+}
+
+/* partner logos */
+
+.partner-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(180px, 1fr));
+  margin: 0;
+  gap: 2rem;
+}
+
+.partner-logos img {
+  padding: 2rem;
+  mix-blend-mode: darken;
 }
 
 /* buttons */
