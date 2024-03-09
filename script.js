@@ -26,9 +26,9 @@ downButton.addEventListener('click', (e) => {
 })
 
 menuToggleTop.addEventListener('click', (e) => {
-
   if (menuTop.classList.contains('menu-active')) {
     menuTop.classList.remove('menu-active');
-  } else menuTop.classList.add('menu-active');
-
+  } else {
+    menuTop.classList.add('menu-active');
+  };
 });
