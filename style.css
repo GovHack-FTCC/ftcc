@@ -334,8 +334,15 @@ section:last-of-type {
 /* section title */
 
 .section-title h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
+}
+
+section-title h3 {
+  color: var(--clr-black);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 /* hero section */
@@ -387,7 +394,7 @@ section.hero h2 {
 .bg-items img.blob-02 {
   top: 50%;
   right: initial;
-  left: -10%;
+  left: -5%;
   transform: rotate(130deg);
 }
 
@@ -412,8 +419,11 @@ section.hero h2 {
   background-color: var(--clr-primary-lightest);
   border-radius: 10px;
   position: relative;
-  opacity: .85;
   transition: 300ms;
+}
+
+.card-item.opaque {
+  background-color: hsla(225,50%,90%, .35); 
 }
 
 .card-item:hover {
