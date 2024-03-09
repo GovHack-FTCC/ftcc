@@ -27,7 +27,7 @@
   --clr-primary-darkest: hsl(225, 9%, 9%);
 
   /* secondary colors */
-  --clr-secondary: hsl(336, 67%, 46%);
+  --clr-secondary: hsl(240, 4%, 11%);
   --clr-secondary-light: hsl(330, 47%, 62%);
   --clr-secondary-lighter: hsl(330, 40%, 82%);
   --clr-secondary-lightest: hsl(330, 19%, 94%);
@@ -338,7 +338,7 @@ section:last-of-type {
   margin-bottom: 2rem;
 }
 
-section-title h3 {
+.section-title h3 {
   color: var(--clr-black);
   text-transform: uppercase;
   font-weight: 700;
@@ -373,6 +373,13 @@ section.hero h2 {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 2rem;
+}
+
+
+@media screen and (max-width: 730px) {
+  .section-title h2 {
+    font-size: 2rem;
+  }
 }
 
 /* background items */
@@ -436,6 +443,12 @@ section.hero h2 {
 
 .card-item p {
   line-height: 1.35rem;
+}
+
+@media screen and (max-width: 730px) {
+  .cards {
+    gap: 1rem;
+  }
 }
 
 /* subsection */
@@ -641,7 +654,7 @@ section#news {
 
 .cards.news-list .card-item .btn i {
   padding: .65rem;
-  background: var(--clr-secondary);
+  background: var(--clr-primary-dark);
   font-size: 1rem;
   color: var(--clr-primary-lightest);
 }
@@ -660,6 +673,13 @@ section#news {
   top: 1rem;
 }
 
+
+@media screen and (max-width: 730px) {
+  .cards.news-list {
+    gap: 2rem;
+  }
+}
+
 /* footer quote */
 
 .footer-quote {
@@ -675,12 +695,10 @@ section#news {
   line-height: 2.45rem;
 }
 
-.footer-quote div {
-  font-family: var(--fnt-headings);
+.footer-quote h5 {
+  color: var(--clr-primary-light);
   text-transform: uppercase;
-  font-weight: 700;
   margin-top: 2rem;
-  font-size: .85rem;
 }
 
 /* footer */
