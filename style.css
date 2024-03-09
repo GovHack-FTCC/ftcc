@@ -375,6 +375,7 @@ nav {
 
 nav img {
   height: 4rem;
+  width: 10.5rem;
 }
 
 nav .logo-container {
@@ -437,12 +438,6 @@ nav a:hover {
 
   nav .logo-container {
     padding-left: 1rem;
-  }
-
-  nav svg {
-    height: 3rem;
-    width: 170px;
-
   }
 
   .menu-toggle {
