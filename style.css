@@ -737,6 +737,28 @@ footer h4 {
   }
 }
 
+/* copyright block*/
+
+.copyright-block {
+  margin-top: 6rem;
+  font-size: .75rem;
+  font-family: var(--fnt-headings);
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px dotted var(--clr-primary-light);
+  padding-top: 1.5rem;
+}
+
+.copyright-block .socials {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
 /* menu */
 
 .menu.menu-vertical {
