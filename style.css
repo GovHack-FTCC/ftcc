@@ -63,7 +63,7 @@ img {
   object-fit: cover;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: var(--fnt-headings);
   color: var(--clr-primary);
 }
@@ -648,6 +648,29 @@ section#news {
   position: absolute;
   right: 0;
   top: 1rem;
+}
+
+/* footer quote */
+
+.footer-quote {
+  width: 80%;
+  margin: 0 auto 8rem;
+  text-align: center;
+  color: var(--clr-primary-lighter);
+}
+
+.footer-quote p {
+  font-style: oblique;
+  font-size: 1.45rem;
+  line-height: 2.45rem;
+}
+
+.footer-quote div {
+  font-family: var(--fnt-headings);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 2rem;
+  font-size: .85rem;
 }
 
 /* footer */
