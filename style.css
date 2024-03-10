@@ -294,6 +294,17 @@ section {
   overflow: hidden;
 }
 
+section.reverse {
+  background-color: var(--clr-primary-darker);
+  color: var(--clr-primary-lightest);
+  margin: 8rem auto 0rem;
+  text-align: center;
+}
+
+section.reverse .row {
+  padding: 8rem 2rem;
+}
+
 .boxed {
   width: 100%;
   max-width: 1280px;
@@ -607,13 +618,16 @@ section.hero h2 {
   background-color: hsla(225,50%,90%, .35); 
 }
 
-
 .card-item i {
   color: var(--clr-primary);
 }
 
 .card-item p {
   line-height: 1.35rem;
+}
+
+.card-item a {
+  margin-top: 1.25rem;
 }
 
 @media screen and (max-width: 730px) {
@@ -783,10 +797,12 @@ section.hero h2 {
   transform: scale(1);
   transition: 300ms;
   height: 100%;
+  filter: saturate(.35);
 }
 
 .card-item img:hover {
   transform: scale(1.2);
+  filter: saturate(.8);
 }
 
 
@@ -808,7 +824,7 @@ section.hero h2 {
 }
 
 .card-item.border {
-  border: 3px solid var(--clr-primary);
+  border: 2px solid var(--clr-primary);
   background-color: transparent;
 }
 
@@ -876,27 +892,15 @@ p.event-description {
 
 /* wrapping quote */
 
-section.reverse {
-  background-color: var(--clr-primary-darker);
-  color: var(--clr-primary-lightest);
-  margin: 8rem auto 0rem;
-  text-align: center;
-}
-
-section.reverse .row {
-  padding: 8rem 2rem;
-}
-
 section.quote-section p.quote-section-quote {
-  font-size: 2rem;
+  font-size: 1.45rem;
   font-style: italic;
   line-height: 3rem;
-  font-weight: 200;
   margin: 0 auto;
 }
 
 section.quote-section p.source {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: var(--fnt-headings);
   color: var(--clr-primary-lighter);
   font-weight: 700;
@@ -928,7 +932,7 @@ section#news {
   border: 1px solid var(--clr-primary-lightest);
   overflow: hidden;
   padding: 0;
-  /* box-shadow: var(--clr-shadow-medium); */
+  box-shadow: var(--clr-shadow-medium);
 }
 
 .cards.news-list .card-item img {
@@ -947,7 +951,7 @@ section#news {
 } */
 
 .cards.news-list .card-item .news-card-content {
-  padding: 1.65rem 1.65rem 2rem;
+  padding: 1.65rem 1.65rem 1.35rem;
   display: flex;
   flex-direction: column;
 }
@@ -1121,6 +1125,8 @@ section#news {
 
 .media-item .date {
   text-align: right;
+  flex-grow: 0;
+  width: 14rem
 }
 
 .media-item-content {
@@ -1129,6 +1135,10 @@ section#news {
 
 .media-item-content h4 {
   font-size: 1.25rem;
+}
+
+.media-item-content p.media-source {
+  font-size: .8rem;
 }
 
 /* footer quote */
