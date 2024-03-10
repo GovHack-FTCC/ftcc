@@ -874,6 +874,48 @@ p.event-description {
   padding-left: 3rem;
 }
 
+/* wrapping quote */
+
+section.reverse {
+  background-color: var(--clr-primary-darker);
+  color: var(--clr-primary-lightest);
+  margin: 8rem auto 0rem;
+  text-align: center;
+}
+
+section.reverse .row {
+  padding: 8rem 2rem;
+}
+
+section.quote-section p.quote-section-quote {
+  font-size: 2rem;
+  font-style: italic;
+  line-height: 3rem;
+  font-weight: 200;
+  margin: 0 auto;
+}
+
+section.quote-section p.source {
+  font-size: 1.25rem;
+  font-family: var(--fnt-headings);
+  color: var(--clr-primary-lighter);
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 730px) {
+  section.reverse {
+    text-align: left;
+    padding: 0rem;
+    margin-top: 4rem;
+  }
+
+  section.reverse .row {
+    padding: 6rem 2rem 5rem;
+    padding-right: 4rem;
+  }
+}
+
 /* news */
 
 section#news {
