@@ -489,6 +489,7 @@ nav a:hover {
   .menu-active a {
     color: var(--clr-primary-lighter);
     font-size: 1rem;
+    border-bottom: none;
   }
 
   .menu-active .top-menu > * {
