@@ -572,23 +572,9 @@ section.hero h2 {
   transform: translateX(60%);
 }
 
-.bg-full-03 {
-  top: -1rem;
-  left: 50%;
-  margin: 0 auto;
-  opacity: .15;
-  position: absolute;
-  transform: translateX(-50%) rotate(8deg);
-
-}
-
 @media screen and (max-width: 730px) {
   .bg-items img {
     width: 200px;
-  }
-
-  .bg-full-03 {
-    width: 600px;
   }
 }
 
