@@ -21,7 +21,7 @@
   --clr-primary: hsl(var(--clr-primary-hue), 65%, 50%);
   --clr-primary-light: hsl(220, 35%, 52%);
   --clr-primary-lighter: hsl(220, 46%, 80%);
-  --clr-primary-lightest: hsl(220, 45%, 96%);
+  --clr-primary-lightest: hsl(200, 45%, 96%);
   --clr-primary-dark: hsl(220, 59%, 15%);
   --clr-primary-darker: hsl(216, 44%, 13%);
   --clr-primary-darkest: hsl(225, 9%, 9%);
@@ -423,11 +423,12 @@ nav a li {
 
 nav a {
   color: var(--clr-primary-dark);
+  border-bottom: 2px solid var(--clr-primary-lightest);
   transition: 300ms;
 }
 
 nav a:hover {
-  border-bottom: 2px solid;
+  border-bottom: 2px solid var(--clr-primary);
   color: var(--clr-primary);
 }
 
@@ -697,7 +698,7 @@ section.hero h2 {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin: 2rem auto;
+  margin: 3rem auto 1rem;
 }
 
 .btn {
