@@ -1015,7 +1015,7 @@ section#news {
   margin-top: 1rem;
 }
 
-.channel-item i {
+.channel-item .channel-icon {
   font-size: 2rem;
   width: 8rem;
   height: 8rem;
@@ -1025,7 +1025,17 @@ section#news {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.channel-item a {
   color: var(--clr-primary-darker);
+  transform: scale(1);
+  transition: 300ms;
+}
+
+.channel-item a:hover {
+  color: var(--clr-primary);
+  transform: scale(1.1);
 }
 
 .channel-item h3 {
@@ -1034,6 +1044,16 @@ section#news {
 
 .channel-item .btn {
   margin-top: 2rem;
+}
+
+.socials {
+  margin-top: 2rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 @media screen and (max-width: 730px) {
