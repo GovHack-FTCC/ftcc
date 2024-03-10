@@ -1114,12 +1114,12 @@ section#news {
 
 footer {
   background: var(--clr-primary-darker);
-  /* background-image: url(./assets/images/nodes-galore@4x.png); */
   background-size: 1200px;
   background-repeat: repeat-x;
   backdrop-filter: opacity(.35);
   color: var(--clr-primary-lightest);
   overflow: hidden;
+  position: relative;
 }
 
 .footer-bg {
