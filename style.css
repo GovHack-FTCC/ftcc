@@ -80,7 +80,15 @@ a {
   font-weight: 700;
 }
 
+a:hover {
+  color: var(--clr-primary-lightest);
+}
+
 a.reverse {
+  color: var(--clr-primary-dark);
+}
+
+a.reverse:hover {
   color: var(--clr-primary);
 }
 
@@ -173,7 +181,7 @@ header.folded .logo-main {
   animation: none;
 } */
 
-.quote {
+.testimonial {
   color: var(--clr-primary-lightest);
   font-family: "Noto Serif", serif;
   width: 100%;
@@ -185,16 +193,77 @@ header.folded .logo-main {
   animation: fade-in-out 10s ease-in-out;
 }
 
-.quote .author {
-  font-family: var(--fnt-headings);
-  font-style: normal;
+.testimonial h3 {
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: .8rem;
+  font-style: normal;
+  color: var(--clr-primary-light);
+  font-size: .7rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   letter-spacing: 2px;
 }
 
-header.folded .quote {
+.author-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.author-box .photo {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.author-box img {
+  opacity: 1;
+  transition: 300ms;
+}
+
+.author-box .btn-play {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  transition: 300ms;
+  z-index: 10;
+}
+
+.author-box:hover img, .author-box.audio-playing img {
+  opacity: .35;
+}
+
+.author-box:hover .btn-play, .author-box.audio-playing .btn-play { 
+  opacity: 1;
+}
+
+.author-box .author p {
+  font-family: var(--fnt-headings);
+  font-style: normal;
+  font-weight: 600;
+  font-size: .8rem;
+  margin: 0;
+  line-height: 1.15rem;
+}
+
+.author-box .author p.audio-instructions {
+  font-size: .65rem;
+  margin-top: .25rem;
+  font-style: italic;
+  color: var(--clr-primary-lighter);
+  border-bottom: 1px dotted;
+}
+
+header.folded .testimonial {
   display: none;
 }
 
@@ -279,7 +348,7 @@ header.folded .button span {
 }
 
 @media screen and (max-width: 730px) {
-  .quote {
+  .testimonial {
     max-width: 100%;
     padding: 2rem 4rem;
   }

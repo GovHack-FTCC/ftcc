@@ -32,3 +32,34 @@ menuToggleTop.addEventListener('click', (e) => {
     menuTop.classList.add('menu-active');
   };
 });
+
+
+// Play audio testimonials
+const testimonialAudio = document.querySelector('#testimonial-01');
+const testimonialButton = document.querySelector('#testimonial01 .btn-play');
+const testimonialBox = document.querySelector('#testimonial01');
+let audioIsPlaying = false;
+
+function playTestimonial() {
+  testimonialAudio.play();
+  audioIsPlaying = true;
+  testimonialBox.classList.add('audio-playing');
+  testimonialButton.classList.remove('bx-play-circle');
+  testimonialButton.classList.add('bx-pause-circle');
+}
+
+function pauseTestimonial() {
+  testimonialAudio.pause();
+  audioIsPlaying = false;
+  testimonialBox.classList.remove('audio-playing');
+  testimonialButton.classList.add('bx-play-circle');
+  testimonialButton.classList.remove('bx-pause-circle');
+}
+
+testimonialButton.addEventListener('click', (e) => {
+  if (!audioIsPlaying) {
+    playTestimonial();
+  } else {
+    pauseTestimonial();
+  };
+});
