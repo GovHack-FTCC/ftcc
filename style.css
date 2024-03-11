@@ -622,6 +622,10 @@ section.hero h2 {
     padding-bottom: 3rem;
   }
 
+  section.hero .section-title {
+    padding-top: 4rem;
+  }
+
   .section-title h2 {
     font-size: 2rem;
   }
