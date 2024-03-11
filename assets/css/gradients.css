@@ -47,7 +47,7 @@
   width: 100%;
   z-index: -20;
   background-color: var(--clr-primary-darker);
-  background-image: linear-gradient(0deg, var(--clr-primary) 0%,var(--clr-primary-darker) 70%);
+  background-image: linear-gradient(-5deg, var(--clr-primary) 0%, var(--clr-primary-dark) 50%);
 }
 
 .bg-full-02 {
