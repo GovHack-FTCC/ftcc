@@ -165,7 +165,7 @@ header.folded {
 }
 
 .logo-main svg {
-  width: 200px;
+  width: 160px;
   animation: rotate 15s linear infinite;
 }
 
@@ -186,12 +186,13 @@ header.folded .logo-main {
   color: var(--clr-primary-lightest);
   font-family: "Noto Serif", serif;
   width: 100%;
-  max-width: 360px;
+  max-width: 420px;
   text-align: center;
   font-size: 1rem;
   font-weight: 300;
   font-style: italic;
   animation: fade-in-out 10s ease-in-out;
+  padding: 0rem;
 }
 
 .testimonial h3 {
@@ -985,7 +986,7 @@ section.quote-section p.source {
 
 @media screen and (max-width: 730px) {
   section.reverse {
-    text-align: left;
+    text-align: center;
     padding: 0rem;
     margin-top: 4rem;
   }
