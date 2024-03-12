@@ -66,6 +66,7 @@
   margin: 0 auto;
   position: absolute;
   transform: translateX(-50%);
+  z-index: -5;
 }
 
 /* bg elements */
@@ -78,6 +79,7 @@
   margin: 0 auto;
   position: absolute;
   transform: translateX(-50%);
+  z-index: -5;
 }
 
 @media screen and (max-width: 730px) {
@@ -93,3 +95,16 @@
 .folded .blub-01, .folded .bg-full-01 {
   display: none;
 }
+
+/* transparent gradient edges */
+
+/* .transparent-edge-p-lightest {
+  width: 110%;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-image: linear-gradient(0deg, var(--clr-primary-lightest) 40%, var(--clr-transparent) 80% );
+  z-index: 50;
+  transform: translateX(-50%);
+} */
