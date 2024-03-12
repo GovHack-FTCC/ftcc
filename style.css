@@ -788,7 +788,7 @@ section.hero h2 {
   width: 100%;
 }
 
-.partner-logos img {
+.partner-logos img {  
   padding: 2rem;
   width: 24%;
   max-width: 240px; 
@@ -796,12 +796,11 @@ section.hero h2 {
 
 @media screen and (max-width: 730px) {
   .partner-logos {
-    grid-template-columns: repeat(auto-fill,minmax(130px, 1fr));
-    gap: 1rem;
     margin: 3rem auto 0rem;
     text-align: center;
   }
   .partner-logos img {
+    width: 45%;
     max-width: 140px;
     padding: 1rem;
     margin-bottom: 1rem;
