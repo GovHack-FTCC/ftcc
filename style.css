@@ -372,8 +372,6 @@ section {
 }
 
 section.reverse {
-  background-color: var(--clr-primary-darker);
-  background-image: linear-gradient(-10deg, var(--clr-primary) 0%,var(--clr-primary-dark) 30%, var(--clr-primary-darkest) 90%);
   color: var(--clr-primary-lightest);
   margin: 8rem auto 0rem;
   text-align: center;
@@ -1326,14 +1324,9 @@ section#news {
 /* footer */
 
 footer {
-  background: var(--clr-primary-darker);
-  /* background-size: 1200px; */
-  background-repeat: repeat-x;
-  backdrop-filter: opacity(.35);
   color: var(--clr-primary-lightest);
   overflow: hidden;
   position: relative;
-  background-image: linear-gradient(-10deg, var(--clr-primary) 0%,var(--clr-primary-dark) 30%, var(--clr-primary-darkest) 90%);
 }
 
 .footer-bg {

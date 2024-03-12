@@ -43,11 +43,12 @@
 
 .bg-full-01 {
   position: absolute;
-  height: 100%;
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: -20;
-  background-color: var(--clr-primary-darkest);
-  background-image: linear-gradient(-10deg, var(--clr-primary) 0%,var(--clr-primary-dark) 30%, var(--clr-primary-darkest) 90%);
+  height: 100%;
+  background-image: linear-gradient(-10deg, var(--clr-primary) 0%,var(--clr-primary-dark) 10%, var(--clr-primary-darkest) 60%);
+  z-index: -6;
 }
 
 .bg-full-02 {
@@ -75,7 +76,6 @@
   left: 50%;
   width: 1280px;
   max-width: 1280px;
-  height: 100%;
   margin: 0 auto;
   position: absolute;
   transform: translateX(-50%);
