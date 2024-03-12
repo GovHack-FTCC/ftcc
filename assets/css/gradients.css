@@ -58,6 +58,7 @@
   background-color: var(--clr-primary-lightest);
   background: url(../images/bg-fairy-floss-01.jpg) bottom no-repeat;
   background-size: cover;
+  opacity: .85;
 }
 
 .bg-full-03 {
@@ -67,9 +68,25 @@
   transform: translateX(-50%);
 }
 
+/* bg elements */
+
+.bg-top-element-01 {
+  left: 50%;
+  width: 1280px;
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
 @media screen and (max-width: 730px) {
   .bg-full-03 {
-    width: 600px;
+    width: 1280px;
+  }
+
+  .bg-top-element-01 {
+    max-width: inherit;
   }
 }
 
