@@ -19,9 +19,9 @@
 
   /* primary colors */
   --clr-primary: hsl(var(--clr-primary-hue), 65%, 50%);
-  --clr-primary-light: hsl(var(--clr-primary-hue), 65%, 60%);
-  --clr-primary-lighter: hsl(220, 46%, 80%);
-  --clr-primary-lightest: hsl(200, 45%, 96%);
+  --clr-primary-light: hsl(var(--clr-primary-hue), 50%, 60%);
+  --clr-primary-lighter: hsl(var(--clr-primary-hue), 30%, 80%);
+  --clr-primary-lightest: hsl(var(--clr-primary-hue), 60%, 97%);
   --clr-primary-dark: hsl(var(--clr-primary-hue), 55%, 35%);
   --clr-primary-darker: hsl(var(--clr-primary-hue), 45%, 30%);
   --clr-primary-darkest: hsl(var(--clr-primary-hue), 20%, 15%);
@@ -696,7 +696,7 @@ section.hero h2 {
 }
 
 .card-item.opaque {
-  background-color: hsla(225,50%,90%, .35); 
+  background-color: hsla(var(--clr-primary-hue), 60%, 93%, .35)
 }
 
 .card-item i {
