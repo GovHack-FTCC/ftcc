@@ -46,8 +46,8 @@
   height: 100%;
   width: 100%;
   z-index: -20;
-  background-color: var(--clr-primary-darker);
-  background-image: linear-gradient(-5deg, var(--clr-primary) 0%, var(--clr-primary-dark) 50%);
+  background-color: var(--clr-primary-darkest);
+  background-image: linear-gradient(-10deg, var(--clr-primary) 0%,var(--clr-primary-dark) 30%, var(--clr-primary-darkest) 90%);
 }
 
 .bg-full-02 {
@@ -56,15 +56,15 @@
   width: 100%;
   z-index: -20;
   background-color: var(--clr-primary-lightest);
+  background: url(../images/bg-fairy-floss-01.jpg) bottom no-repeat;
+  background-size: cover;
 }
 
 .bg-full-03 {
-  top: -1rem;
   left: 50%;
   margin: 0 auto;
-  opacity: .35;
   position: absolute;
-  transform: translateX(-50%) rotate(8deg);
+  transform: translateX(-50%);
 }
 
 @media screen and (max-width: 730px) {

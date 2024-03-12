@@ -19,12 +19,12 @@
 
   /* primary colors */
   --clr-primary: hsl(var(--clr-primary-hue), 65%, 50%);
-  --clr-primary-light: hsl(220, 35%, 52%);
+  --clr-primary-light: hsl(var(--clr-primary-hue), 65%, 60%);
   --clr-primary-lighter: hsl(220, 46%, 80%);
   --clr-primary-lightest: hsl(200, 45%, 96%);
-  --clr-primary-dark: hsl(220, 59%, 15%);
-  --clr-primary-darker: hsl(216, 44%, 13%);
-  --clr-primary-darkest: hsl(225, 9%, 9%);
+  --clr-primary-dark: hsl(var(--clr-primary-hue), 55%, 35%);
+  --clr-primary-darker: hsl(var(--clr-primary-hue), 45%, 30%);
+  --clr-primary-darkest: hsl(var(--clr-primary-hue), 20%, 15%);
 
   /* secondary colors */
   --clr-secondary: hsl(240, 4%, 11%);
@@ -65,7 +65,7 @@ img {
 
 h1, h2, h3, h4, h5 {
   font-family: var(--fnt-headings);
-  color: var(--clr-primary);
+  color: var(--clr-black);
 }
 
 p {
@@ -153,7 +153,7 @@ header.folded {
   position: fixed;
   top: 0;
   padding: 0;
-  background: var(--clr-primary-darker);
+  background: var(--clr-primary-darkest);
   z-index: 50;
 }
 
@@ -289,7 +289,7 @@ header.folded .button, header.folded .button:active {
   color: var(--clr-primary-lighter);
   animation: none;
   z-index: 20;
-  background-color: var(--clr-primary-darker);
+  background-color: var(--clr-primary-darkest);
   border-radius: 2rem;
   height: 3rem;
   display: flex;
@@ -434,7 +434,7 @@ section:last-of-type {
 }
 
 .section-title h3 {
-  color: var(--clr-black);
+  color: var(--clr-primary-dark);
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 2px;
@@ -813,30 +813,43 @@ section.hero h2 {
 .btn {
   background-color: var(--clr-success);
   font-family: var(--fnt-headings);
-  padding: .85rem 1.65rem;
+  padding: 1rem 1.65rem;
   color: var(--clr-white);
   cursor: pointer;
-  border: 1px solid var(--clr-success);
-  border-radius: 6px;
+  box-shadow: inset 0px 0px 0px 2px var(--clr-success);
+  border-radius: 5px;
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+  transition: 300ms;
+}
+
+.btn:hover {
+  transform: translateY(-.25rem);
 }
 
 .btn.btn-primary {
   background-color: var(--clr-primary);
-  border: 1px solid var(--clr-primary-dark);
+  box-shadow: none;
+  transition: 300ms;
 }
 
 .btn.btn-secondary {
-  background-color: var(--clr-white-60);
-  border: 2px solid var(--clr-primary-darker);
+  background-color: transparent;
+  box-shadow: inset 0px 0px 0px 2px var(--clr-black);
   color: var(--clr-secondary-darker);
 }
 
-.btn:hover {
-  opacity: .9;
+.btn.btn-primary:hover {
+  background-color: var(--clr-primary-dark);
+  box-shadow: none;
+}
+
+.btn.btn-secondary:hover {
+  background-color: transparent;
+  box-shadow: inset 0px 0px 0px 2px var(--clr-primary);
+  color: var(--clr-primary);
 }
 
 @media screen and (max-width: 730px) {
@@ -1159,13 +1172,13 @@ section#news {
   align-items: center;
 }
 
-.channel-item a {
+.channel-item a i {
   color: var(--clr-primary-darker);
   transform: scale(1);
   transition: 300ms;
 }
 
-.channel-item a:hover {
+.channel-item a i:hover {
   color: var(--clr-primary);
   transform: scale(1.1);
 }
@@ -1294,9 +1307,8 @@ footer {
 
 .footer-bg {
   position: absolute;
-  top: -3rem;
   z-index: -10;
-  opacity: .25;
+  opacity: 1;
   transform: translateX(-50%);
   left: 50%;
 }
@@ -1416,7 +1428,7 @@ footer h4 {
   align-items: center;
   padding: .5rem;
   color: var(--clr-primary-light);
-  background-color: var(--clr-primary-dark);
+  background-color: var(--clr-primary-darkest);
   width: 3rem;
   height: 3rem;
   border-radius: 10rem;
