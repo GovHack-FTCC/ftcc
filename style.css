@@ -696,6 +696,10 @@ section.hero h2 {
   transition: 300ms;
 }
 
+.card-item:hover {
+  transform: translateY(5px);
+}
+
 .card-item.opaque {
   background-color: hsla(var(--clr-primary-hue), 60%, 93%, .35)
 }
